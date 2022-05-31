@@ -1,4 +1,4 @@
-package practice;
+package mentorSession0601;
 
 public class FirstVowel{
 
