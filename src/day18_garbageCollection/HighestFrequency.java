@@ -7,23 +7,24 @@ public class HighestFrequency {
         String str = "aaabbccccddeeee";
 
         int highest = 0;
-        char highestFrequency = str.charAt(0);
+        String result = "";
 
         for (int i = 0; i < str.length(); i++) {
             int count = 0;
             char ch = str.charAt(i);
-            for (int j = 0; j < str.length(); j++) {
+            for (int j = i; j < str.length(); j++) {
                 if(str.charAt(j) == ch){
                     count++;
+                    if(count > highest) {
+                        highest = count;
+                        result = ch + "\n";
+                    }else if(count == highest){
+                        result += ch + "\n";
+                    }
                 }
             }
-            if(count >= highest) {
-                highest = count;
-                highestFrequency = ch;
-            }
-            System.out.println(highestFrequency);
         }
-
+        System.out.println(result);
     }
 }
 
