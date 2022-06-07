@@ -2,12 +2,8 @@ package utilities;
 
 public class StringUtility {
 
-    public static void main(String[] args) {
 
-    }
-
-
-public static String reverse(String str) {
+    public static String reverse(String str) {
 
     String reverse = "";  // to contain all the characters of the given string in reversed order
 
@@ -17,6 +13,42 @@ public static String reverse(String str) {
 
     return reverse;
 
+    }
+
+    public static int frequency(String sentence, String word){
+
+        int count = 0;
+
+        while(sentence.contains(word)){
+            sentence = sentence.replaceFirst(word,"");
+            count++;
+        }
+
+        return count;
+    }
+
+    public static int frequency(String str, char ch){
+        int count = 0;
+
+        for (int i = 0; i < str.length(); i++) {
+            if(str.charAt(i) == ch){
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public static String removeDup(String str){
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char each = str.charAt(i);
+            if(!result.contains("" + each)) {    // result.indexof(each) < 0
+                result += each;
+            }
+        }
+        return result;
     }
 
 }
