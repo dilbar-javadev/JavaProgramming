@@ -1,4 +1,4 @@
-package day21_nultiDimensionalArray;
+package day21_multiDimensionalArray;
 
 import java.util.Arrays;
 
@@ -20,3 +20,12 @@ public class RemoveExtraSpaces {
         System.out.println(str.trim());
     }
 }
+
+/*
+Write a program that can remove all the extra space from string
+            Ex:
+                str = "  Hello world      I      love      Java    "
+
+            Output:
+                Hello world I love Java
+ */
