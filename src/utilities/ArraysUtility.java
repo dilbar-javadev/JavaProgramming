@@ -133,9 +133,51 @@ public class ArraysUtility {
         return new_array;
     }
 
+    public static boolean contains(int[] array, int element) {
+        for (int each : array) {
+            if(element == each){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean contains(double[] array, double element) {
+        for (double each : array) {
+            if(element == each){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean contains(char[] array, char element) {
+        for (char each : array) {
+            if(element == each){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean contains(String[] array, String element) {
+        for (String each : array) {
+            if(element.equals(each)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     /*
-    public static boolean contains(int[] array, int element){
+    public static int[] remove(int[] array, int index){
 
     }
+
+    public static int[] removeDup(int[] array){
+
+    }
+
      */
 }
