@@ -1,4 +1,4 @@
-package day25_Constructors;
+package day25_constructors;
 
 public class TestRectangleObject {
 
