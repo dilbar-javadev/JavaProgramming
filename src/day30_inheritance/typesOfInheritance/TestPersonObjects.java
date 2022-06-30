@@ -8,5 +8,30 @@ public class TestPersonObjects {
 
         Student student = new Student("Lucy", 'F', LocalDate.of(1993,2,9), 'A', "A01");
 
+        President president = new President("Daniel", 'M', LocalDate.of(1980, 12,1), LocalDate.of(2020,8,24));
+
+        Teacher teacher = new Teacher("Emily", 'F', LocalDate.of(1985,11,1), "Math Teacher", "A01", 90000);
+
+        System.out.println(student);
+        System.out.println(teacher);
+        System.out.println(president);
+
+        student.study();
+        teacher.teach();
+        president.lie();
+
+        System.out.println("-----------------------------------------------------");
+
+        student.eat("Baklava");
+        teacher.eat("Kebab");
+        president.eat("Donut");
+
+
+        student.drink("Milk");
+        teacher.drink("Tea");
+        president.drink("Coffee");
+
+
+
     }
 }
