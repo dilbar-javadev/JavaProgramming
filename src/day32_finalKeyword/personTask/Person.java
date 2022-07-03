@@ -59,6 +59,19 @@ public class Person {
                 ", dateOfBirth=" + dateOfBirth +
                 '}';
     }
+
+    public void eat(){
+        System.out.println(name +  " is eating");
+    }
+
+    public void drink(){
+        System.out.println(name +  " is drinking");
+    }
+
+    public void sleep(){
+        System.out.println(name +  " is sleeping");
+    }
+
 }
 
 /*
