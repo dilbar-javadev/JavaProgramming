@@ -1,4 +1,4 @@
-package day31_inheritacne.animal_methodOverriding;
+package day34_abstraction.animalTask;
 
 public abstract class Animal {
 
