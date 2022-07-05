@@ -1,6 +1,6 @@
 package day34_abstraction.animalTask;
 
-public class Duck extends Animal{
+public class Duck extends Animal implements Playable, Flyable, Swimmable{
 
 
     public Duck(String name, String breed, char gender, int age, String size, String color) {
@@ -10,5 +10,20 @@ public class Duck extends Animal{
     @Override
     public void eat() {
         System.out.println("Duck " + getName() + " is eating worms");
+    }
+
+    @Override
+    public void play() {
+
+    }
+
+    @Override
+    public void fly() {
+
+    }
+
+    @Override
+    public void swim() {
+
     }
 }
