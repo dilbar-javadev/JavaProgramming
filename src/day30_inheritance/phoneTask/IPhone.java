@@ -4,8 +4,8 @@ public class IPhone extends Phone{
 
     public static boolean hasApplePay = true;
 
-    public IPhone(String model, String size, double price, String color) {
-        super("Apple", model, size, price, color);
+    public IPhone(String model, String size, String color, double price) {
+        super("Apple", model, size, color, price);
     }
 
     public void faceTime(long phoneNumber){

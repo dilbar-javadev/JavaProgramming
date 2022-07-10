@@ -2,8 +2,8 @@ package day30_inheritance.phoneTask;
 
 public class Nokia extends Phone {
 
-    public Nokia(String model, String size, double price, String color) {
-        super("Nokia", model, size, price, color);
+    public Nokia(String model, String size, String color, double price) {
+        super("Nokia", model, size, color, price);
     }
 
     public void selfDefense(){

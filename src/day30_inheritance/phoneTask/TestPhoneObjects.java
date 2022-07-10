@@ -4,11 +4,11 @@ public class TestPhoneObjects {
 
     public static void main(String[] args) {
 
-        IPhone iPhone = new IPhone("ipone 12", "Large", 1000.5, "Black");
+        IPhone iPhone = new IPhone("ipone 12", "Large", "Black",1000.5);
 
-        Samsung samsung = new Samsung("Galaxy S22", "Medium", 1100, "White");
+        Samsung samsung = new Samsung("Galaxy S22", "Medium", "White",1100);
 
-        Nokia nokia = new Nokia("Brick", "Small", 50, "Pink");
+        Nokia nokia = new Nokia("Brick", "Small", "Pink",50);
 
         iPhone.call(911);
         samsung.call(911);
