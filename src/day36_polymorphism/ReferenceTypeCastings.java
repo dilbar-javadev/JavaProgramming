@@ -6,9 +6,10 @@ import day29_interitance.animalTask.Dog;
 import day30_inheritance.phoneTask.IPhone;
 import day30_inheritance.phoneTask.Nokia;
 import day30_inheritance.phoneTask.Phone;
-import day33_abstraction.employeeTask.Developer;
-import day33_abstraction.employeeTask.Driver;
-import day33_abstraction.employeeTask.Employee;
+import day33_abstraction.employeeTask.*;
+import day35_polymorphism.transportationTask.AutoPilot;
+import day35_polymorphism.transportationTask.Electric;
+import day35_polymorphism.transportationTask.Tesla;
 
 public class ReferenceTypeCastings {
 
@@ -55,8 +56,31 @@ public class ReferenceTypeCastings {
 
         System.out.println(((Developer) employee).getProgrammingLanguage());
 
-        Driver driver = (Driver) employee;
+        // Driver driver = (Driver) employee;
 
+        System.out.println("------------------------------------------------");
+
+        Electric electric = new Tesla("Tesla", "Model Y", "Blue", 2020, 55000);
+
+        electric.charge();
+        ((Tesla) electric).selfDrive();
+
+        ((AutoPilot) electric).selfDrive();
+
+        System.out.println("------------------------------------------------");
+
+        Employee employee1 = new Teacher("James", 45, 'M', "B1", "Math teacher", 75000);
+
+        Employee employee2 = new Developer("Lucy", 30, 'F', "C1", "Java Developer", 95000, "Java");
+
+        Employee employee3 = new Driver("Aeron", 48, 'M', "D1", "Truck Driver", 90000);
+
+        Employee employee4 = new Tester("Emily", 35, 'F', "E1", "Manual Tester", 80000);
+
+        employee1.work();
+        employee2.work();
+        employee3.work();
+        employee4.work();
 
     }
 }
