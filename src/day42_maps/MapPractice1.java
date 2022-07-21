@@ -66,7 +66,7 @@ public class MapPractice1 {
             if(eachEntry.getValue().equals("F")){
                 System.out.println(eachEntry.getKey());
             }
-            System.out.println(eachEntry.getKey());
+            //System.out.println(eachEntry.getKey());
         }
 
         System.out.println("--------------------------------------------------------------");
